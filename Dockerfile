@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt ./requirements.txt
 COPY app.py ./app.py
 
-RUN python -m pip install requirements.txt
+RUN python -m pip install -r requirements.txt
 
 EXPOSE 8080
 
